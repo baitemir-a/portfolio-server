@@ -29,7 +29,8 @@ import { WorkStack } from './work-stack/work-stack';
       autoLoadModels: true,
     }),
     ServeStaticModule.forRoot({
-      rootPath: path.resolve(__dirname, 'static'),
+      rootPath: path.resolve(__dirname, '..', 'src', 'media'),
+      serveRoot: '/media',
     }),
     WorkModule,
     StackModule,

@@ -22,6 +22,7 @@ async function start() {
       'http://localhost:3000',
       'http://localhost:5173',
       'https://portfolio-baitemirasanbaevs-projects.vercel.app/',
+      '*'
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
