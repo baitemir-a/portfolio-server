@@ -9,6 +9,8 @@ import * as path from 'path';
 import { Work } from './work/work';
 import { Stack } from './stack/stack';
 import { WorkStack } from './work-stack/work-stack';
+import { FeedbackModule } from './feedback/feedback.module';
+import { Feedback } from './feedback/feedback';
 
 
 @Module({
@@ -25,7 +27,7 @@ import { WorkStack } from './work-stack/work-stack';
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DB,
-      models: [Work, Stack, WorkStack],
+      models: [Work, Stack, WorkStack, Feedback],
       autoLoadModels: true,
     }),
     ServeStaticModule.forRoot({
@@ -35,6 +37,7 @@ import { WorkStack } from './work-stack/work-stack';
     WorkModule,
     StackModule,
     WorkStackModule,
+    FeedbackModule,
   ]
 })
 export class AppModule {}
