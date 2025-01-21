@@ -41,12 +41,12 @@ export class Work extends Model<Work> {
   full: string;
   @Column({
     type: DataType.ARRAY(DataType.STRING),
-    allowNull: false,
+    allowNull: true,
   })
   images: string[];
   @Column({
     type: DataType.ARRAY(DataType.STRING),
-    allowNull: false,
+    allowNull: true,
   })
   stack_info: string[];
 
