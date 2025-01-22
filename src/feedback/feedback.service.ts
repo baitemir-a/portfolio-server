@@ -3,7 +3,6 @@ import { InjectModel } from '@nestjs/sequelize';
 import { Feedback } from './feedback';
 import { CreateFeedbackDto } from './feedback.dto';
 import { UpdateFeedbackDto } from './feedback.dto';
-import { log } from 'console';
 
 @Injectable()
 export class FeedbackService {

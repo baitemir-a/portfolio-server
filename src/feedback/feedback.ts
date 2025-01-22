@@ -22,7 +22,7 @@ export class Feedback extends Model<Feedback> {
     type: DataType.STRING,
     allowNull: false,
   })
-  title: string;
+  name: string;
   @Column({
     type: DataType.STRING,
     allowNull: false,
